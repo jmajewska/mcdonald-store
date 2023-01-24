@@ -1,0 +1,26 @@
+.formWrapper {
+  width: 400px;
+  background-color: aqua;
+  .formRow {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      background-color: white;
+      height: 38px;
+      border-radius: 4px;
+      border: 1px solid red;
+    }
+  }
+  .formArray {
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    .formRow {
+      width: 80%;
+      input {
+        height: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.formWrapper {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  .row {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      height: 40px;
+      border: 1px solid red;
+      border-radius: 5px;
+    }
+  }
+}

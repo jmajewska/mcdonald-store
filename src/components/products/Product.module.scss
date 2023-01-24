@@ -1,0 +1,94 @@
+@mixin btn($color) {
+  border-top: 1px solid $color;
+  padding: 10px;
+  transition: all 0.2s ease-in;
+  svg {
+    transition: transform 0.2s ease-in;
+  }
+  &:hover {
+    background-color: darken($color, 10%);
+    svg {
+      transform: scale(1.5);
+    }
+  }
+}
+
+.product {
+  display: flex;
+  background-color: whitesmoke;
+  flex-direction: column;
+  border-radius: 8px;
+  overflow: hidden;
+  * {
+    margin: 0;
+  }
+
+  @apply shadow-xl;
+  &Image {
+    width: 250px;
+    height: 250px;
+  }
+
+  &Info {
+    padding: 10px;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+    span {
+      font-size: 14px;
+    }
+
+    .price {
+      padding-bottom: 10px;
+      text-decoration: underline;
+    }
+  }
+  .btn {
+    @include btn(#a9a9a9);
+  }
+
+  .adminBtn {
+    @include btn(#bb9bb0);
+  }
+
+}
+.deleteBtn {
+  @include btn(rgb(177, 100, 100));
+}
+
+.submitBtn {
+  @include btn(#00a652)
+}
+
+.modalWrapper {
+
+  h5 {
+    color: rgb(71, 71, 71);
+  }
+  .name {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .deleteBtn {
+    background-color:rgb(177, 100, 100);
+    border-radius: 5px;
+  }
+
+  .submitBtn {
+    background-color: #00a652;
+    border-radius: 5px;
+  }
+  
+  .actions {
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,50 @@
+.logo {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.entryWrapper {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: enter-down .6s ease-out;
+  
+}
+
+.slogan {
+  font-size: 30px;
+  font-weight: 500;
+  color: #43cd8e;
+}
+
+
+.actions {
+  display: flex;
+  gap: 20px;
+  color: darken(#43cd8e, 20%);
+  font-weight: 500;
+  
+  a {
+    text-decoration: underline;
+    @apply transition;
+    color: #0C6D6C;
+
+    &:hover {
+      @apply scale-105;
+      color: #086375;
+    }
+  }
+}
+
+@keyframes enter-down {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

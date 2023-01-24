@@ -1,0 +1,46 @@
+@import './utils.scss';
+
+
+body {
+  background-color: #FAEDCD;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  
+  label {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  label {
+    width: 8%;
+  }
+
+  input {
+    width: 60%;
+  }
+  input[type='checkbox'] {
+    width: 100%;
+  }
+}
+
+.form-row-3 {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}

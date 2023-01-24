@@ -1,0 +1,21 @@
+.cardWrapper {
+  @apply flex gap-8 mt-36;
+}
+
+.card {
+  @apply h-80 w-80 flex flex-col items-center rounded-lg justify-center transition;
+  background-color: #eb5a16;
+
+  &:hover {
+    @apply scale-105;
+  }
+
+  p {
+    @apply font-medium text-xl tracking-widest text-white;
+  }
+}
+
+.icon {
+  @apply h-36 mb-10;
+  color: lighten(#eb5a16, 30%);
+}

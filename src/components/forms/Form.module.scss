@@ -1,0 +1,60 @@
+.formWrapper {
+  @apply h-2/5 items-center justify-center m-24 flex flex-col;
+  background-color: lighten(#7B9EA8,20%);
+  width: 450px;
+  @apply rounded-lg;
+
+  form {
+    @apply flex flex-col items-center justify-center w-full;
+  }
+}
+
+.formField {
+  @apply m-2 flex flex-col w-4/5 ;
+
+  label {
+    color: #042a2b;
+    @apply text-xs;
+  }
+}
+
+.btn {
+  background-color: #5eb1bf !important;
+  color: white;
+  @apply p-5 rounded-lg shadow-sm transition m-3 h-9 flex justify-center items-center;
+
+  &:hover {
+    @apply scale-105;
+  }
+}
+
+.link {
+  text-decoration: underline;
+  color: #086375;
+  &hover {
+    color: #042a2b;
+  }
+}
+
+.error {
+  font-size: 14px;
+  color: #D84727;
+  font-weight: 600;
+}
+
+@keyframes slide-right {
+  0% {
+    transform: translate(-100px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes go-up {
+  0% {
+    transform: translateY(-10rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
